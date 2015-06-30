@@ -4,13 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "minitest-fail-fast"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Teo Ljungberg"]
   spec.email         = ["teo@teoljungberg.com"]
 
+
   spec.summary       = %q{Fail and exit as soon as a test fails}
   spec.description   = %q{Reimplements RSpec's "fail fast" feature for minitest}
-  spec.homepage      = "https://github.com/teoljungberg/minitest-fail-fast"
+  spec.homepage      = "https://github.com/fastly/minitest-fail-fast"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
